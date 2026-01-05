@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janiito Studio | Portafolio de Minijuegos</title>
+    <meta name="description"
+        content="Bienvenido a Janiito Studio, el portafolio de minijuegos donde la elegancia y la jugabilidad se encuentran.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Janiito Studio Logo Quadrat.PNG">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Janiito Studio Logo Horitzontal Sense Fons.png" alt="Janiito Studio">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" data-i18n="nav-home">Inicio</a></li>
+            <li><a href="#projects" data-i18n="nav-projects">Proyectos</a></li>
+            <li><a href="#about" data-i18n="nav-about">Sobre mí</a></li>
+            <li><a href="#contact" data-i18n="nav-contact">Contacto</a></li>
+        </ul>
+        <div class="controls">
+            <select id="language-select" class="lang-select">
+                <option value="es">Español</option>
+                <option value="ca">Català</option>
+                <option value="en">English</option>
+            </select>
+            <button id="theme-toggle" class="theme-btn">
+                <span class="icon-sun">☀️</span>
+                <span class="icon-moon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero-title">Creando mundos, <span class="highlight">un pixel a la vez.</span></h1>
+            <p data-i18n="hero-subtitle">Desarrollador de videojuegos independiente enfocado en experiencias
+                interactivas únicas.</p>
+            <a href="#projects" class="btn" data-i18n="hero-cta">Explorar Juegos</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="projects" class="projects-section">
+            <h2 data-i18n="projects-title">Mis Minijuegos</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Los proyectos se cargarán dinámicamente con JS -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 data-i18n="nav-about">Sobre mí</h2>
+            <div class="about-content" data-i18n="about-text">
+                <!-- Contenido dinámico de Sobre Mí -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 data-i18n="contact-title">Contacto</h2>
+            <div class="contact-content" data-i18n="contact-text">
+                <!-- Contenido dinámico de Contacto -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Janiito Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
