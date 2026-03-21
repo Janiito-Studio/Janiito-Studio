@@ -2,9 +2,9 @@
     --bg-color: #ffffff;
     --text-color: #1a1a1a;
     --accent-color: #2563eb;
-    --secondary-bg: #f8fafc;
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --secondary-bg: #ffffff;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(0, 0, 0, 0.1);
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -235,8 +235,11 @@ body.dark-mode .icon-moon {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
     gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .project-card {
@@ -275,6 +278,7 @@ body.dark-mode .icon-moon {
 
 .project-info {
     padding: 2rem;
+    text-align: center;
 }
 
 .project-info h3 {
@@ -292,6 +296,7 @@ body.dark-mode .icon-moon {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tag {
